@@ -1,63 +1,29 @@
-# Import libraries
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from io import StringIO
+# **LocalPulse - AI-Powered Local Market Insights**
 
-# 1. Data Preparation 
-data = """
-Date,Business_ID,Search_Volume_Term,Average_Review_Score,Review_Sentiment_Score,Foot_Traffic,Hashtag_Mentions,Local_Event,Weather,Business_Type,Revenue
-2024-01-01,101,Coffee Shop Near Me,4.5,0.85,120,55,No,Sunny,Cafe,1500
-2024-01-01,102,Taco Tuesday Deal,4.1,0.65,85,32,No,Sunny,Restaurant,1100
-2024-01-01,103,Yoga Class,4.8,0.92,45,15,No,Sunny,Fitness,750
-2024-01-02,101,Coffee Shop Near Me,4.6,0.90,135,60,No,Cloudy,Cafe,1650
-2024-01-02,102,Taco Tuesday Deal,4.2,0.70,90,35,No,Cloudy,Restaurant,1200
-2024-01-02,103,Yoga Class,4.9,0.95,50,18,No,Cloudy,Fitness,800
-2024-01-03,101,Coffee Shop Near Me,4.4,0.78,110,50,No,Rainy,Cafe,1400
-2024-01-03,102,Taco Tuesday Deal,4.0,0.60,75,28,No,Rainy,Restaurant,1000
-2024-01-03,103,Yoga Class,4.7,0.88,40,12,No,Rainy,Fitness,700
-2024-01-04,101,Coffee Shop Near Me,4.7,0.91,150,70,Local Event,Sunny,Cafe,1800
-2024-01-04,102,Taco Tuesday Deal,4.3,0.75,100,40,Local Event,Sunny,Restaurant,1350
-2024-01-04,103,Yoga Class,5.0,0.98,60,25,Local Event,Sunny,Fitness,950
-2024-01-05,101,Coffee Shop Near Me,4.6,0.87,140,65,No,Cloudy,Cafe,1700
-2024-01-05,102,Taco Tuesday Deal,4.4,0.80,95,38,No,Cloudy,Restaurant,1250
-2024-01-05,103,Yoga Class,4.9,0.94,55,20,No,Cloudy,Fitness,850
-"""
+# My idea 
+LocalPulse is an AI-based trend forecasting tool designed focus on small local businesses. It analyzes digital signals, such as search trends, online reviews, and foot traffic data, to help business owners anticipate demand shifts and make smarter, data-informed decisions about products and services in their local area.
 
-df = pd.read_csv(StringIO(data))
+# Background
+**The problem:** Many small businesses struggle with understanding their local markets due to limited time, limited access to real-time data or expensive market research.
 
-# 2. Preprocessing
-df = pd.get_dummies(df, columns=['Local_Event', 'Weather', 'Business_Type'], drop_first=True)
+**My personal motivation:** The idea for LocalPulse came to me a few chapters into this course. I was discussing my friend’s small business, and she had noticed a sudden drop in foot traffic. However, she couldn’t figure out whether it was due to the weather, a new competitor, or changes in local events or online search trends. That conversation sparked the idea: What if local businesses had access to simple, AI-powered tools that could give them a clearer picture of what’s happening around them?
+	
+**Why It’s Important:** This topic matters because it levels the playing field between small, local businesses and larger chains with more resources. I want to empower and encourage smaller businesses.
 
-# Define (X) and (y).
-# target = Revenue
-# Drop irrelevant columns
-features = df.drop(columns=['Date', 'Business_ID', 'Search_Volume_Term', 'Revenue'])
-target = df['Revenue']
+# Data and AI techniques 
+<img width="858" height="133" alt="image" src="https://github.com/user-attachments/assets/992085b0-ba81-476a-b064-55d2c555c09b" />
+<img width="674" height="155" alt="image" src="https://github.com/user-attachments/assets/93da2ceb-ef23-47f3-919e-425d4fce0818" />
 
-# 3. Model Training
-# training vs. testing sets, 80%, 20%
-X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)
+# Challenges
+<img width="989" height="199" alt="image" src="https://github.com/user-attachments/assets/6de4c329-fe17-4aa3-ad18-abe73fc4cfaa" />
 
-# Linear Regression
-model = LinearRegression()
+# What´s next?
+<img width="974" height="155" alt="image" src="https://github.com/user-attachments/assets/c98f5f9d-0708-4e00-9655-61329c7a7591" />
 
-# train model 
-model.fit(X_train, y_train)
+# How is my idea different?
+While there are existing tools like Google Trends, Yelp Business Insights, and Meta's Local Insights, they are often limited in scope, difficult to use, or designed for larger companies with dedicated marketing teams. Most small businesses don’t have access to affordable, easy-to-understand tools that combine multiple local data sources—such as search trends, reviews, foot traffic, and social media signals—into clear, actionable insights.
+	
+LocalPulse fills this gap by offering a simple, AI-powered forecasting tool tailored specifically for small, local businesses. It helps them anticipate demand shifts, adapt to local trends, and make smarter decisions—without needing a background in data analysis or a big budget.
 
-# 4. Prediction
-predictions = model.predict(X_test)
-
-# Print the model's coefficients
-print("Model Coefficients:")
-for feature, coef in zip(features.columns, model.coef_):
-    print(f"  {feature}: {coef:.2f}")
-
-sample_input = X_test.iloc[0].values.reshape(1, -1)
-sample_prediction = model.predict(sample_input)
-actual_value = y_test.iloc[0]
-
-print("\nSample Prediction:")
-print(f"  Features used for prediction: {sample_input}")
-print(f"  Predicted Revenue: ${sample_prediction[0]:.2f}")
-print(f"  Actual Revenue: ${actual_value:.2f}")
+# How I will create my model - step by step 
+<img width="942" height="177" alt="image" src="https://github.com/user-attachments/assets/4da6b37b-3817-4ba7-8a7f-e5173a3c2540" />
