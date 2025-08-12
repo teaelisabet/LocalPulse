@@ -10,6 +10,11 @@ LocalPulse is an AI-based trend forecasting tool designed focus on small local b
 	
 **Why It’s Important:** This topic matters because it levels the playing field between small, local businesses and larger chains with more resources. I want to empower and encourage smaller businesses.
 
+# How is my idea different?
+While there are existing tools like Google Trends, Yelp Business Insights, and Meta's Local Insights, they are often limited in scope, difficult to use, or designed for larger companies with dedicated marketing teams. Most small businesses don’t have access to affordable, easy-to-understand tools that combine multiple local data sources—such as search trends, reviews, foot traffic, and social media signals—into clear, actionable insights.
+	
+LocalPulse fills this gap by offering a simple, AI-powered forecasting tool tailored specifically for small, local businesses. It helps them anticipate demand shifts, adapt to local trends, and make smarter decisions, without needing a background in data analysis or a big budget.
+
 # Data and AI techniques 
 <img width="858" height="133" alt="image" src="https://github.com/user-attachments/assets/992085b0-ba81-476a-b064-55d2c555c09b" />
 <img width="674" height="155" alt="image" src="https://github.com/user-attachments/assets/93da2ceb-ef23-47f3-919e-425d4fce0818" />
@@ -20,10 +25,6 @@ LocalPulse is an AI-based trend forecasting tool designed focus on small local b
 # What´s next?
 <img width="974" height="155" alt="image" src="https://github.com/user-attachments/assets/c98f5f9d-0708-4e00-9655-61329c7a7591" />
 
-# How is my idea different?
-While there are existing tools like Google Trends, Yelp Business Insights, and Meta's Local Insights, they are often limited in scope, difficult to use, or designed for larger companies with dedicated marketing teams. Most small businesses don’t have access to affordable, easy-to-understand tools that combine multiple local data sources—such as search trends, reviews, foot traffic, and social media signals—into clear, actionable insights.
-	
-LocalPulse fills this gap by offering a simple, AI-powered forecasting tool tailored specifically for small, local businesses. It helps them anticipate demand shifts, adapt to local trends, and make smarter decisions, without needing a background in data analysis or a big budget.
-
 # How I will create my model - step by step 
 <img width="942" height="177" alt="image" src="https://github.com/user-attachments/assets/4da6b37b-3817-4ba7-8a7f-e5173a3c2540" />
+See the result in the file "LocalPulse.Code.
