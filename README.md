@@ -1,7 +1,7 @@
 # **LocalPulse - AI-Powered Local Market Insights**
 
 # My idea 
-LocalPulse is an AI-based trend forecasting tool designed focus on small local businesses. It analyzes digital signals, such as search trends, online reviews, and foot traffic data. This to help business owners anticipate demand shifts and make smarter, data-informed decisions about products and services in their local area. To see the model code please open the file "LocalPulse.Code" above. 
+LocalPulse is an AI-based trend forecasting tool designed focus on small local businesses. It analyzes digital signals, such as search trends, online reviews, and foot traffic data. This to help business owners anticipate demand shifts and make smarter, data-informed decisions about products and services in their local area.
 
 # Background
 **The problem:** Many small businesses struggle with understanding their local markets due to limited time, limited access to real-time data or expensive market research.
@@ -26,5 +26,9 @@ LocalPulse fills this gap by offering a simple, AI-powered forecasting tool tail
 <img width="974" height="155" alt="image" src="https://github.com/user-attachments/assets/c98f5f9d-0708-4e00-9655-61329c7a7591" />
 
 # How I will create my model - step by step 
-<img width="942" height="199" alt="image" src="https://github.com/user-attachments/assets/1f3b55e9-9410-40c7-ba1c-372cfa8e5107" />
+<img width="942" height="177" alt="image" src="https://github.com/user-attachments/assets/4bdab310-83c4-4e7e-9bb8-3199da7d8bf6" />
+
+
+# My model code
+<img width="1008" height="1385" alt="image" src="https://github.com/user-attachments/assets/c9a74f1f-9de5-49d7-9eea-565dfe618bcc" />
 
