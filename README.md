@@ -16,17 +16,65 @@ While there are existing tools like Google Trends, Yelp Business Insights, and M
 LocalPulse fills this gap by offering a simple, AI-powered forecasting tool tailored specifically for small, local businesses. It helps them anticipate demand shifts, adapt to local trends, and make smarter decisions, without needing a background in data analysis or a big budget.
 
 # Data and AI techniques 
-<img width="858" height="133" alt="image" src="https://github.com/user-attachments/assets/992085b0-ba81-476a-b064-55d2c555c09b" />
-<img width="674" height="155" alt="image" src="https://github.com/user-attachments/assets/93da2ceb-ef23-47f3-919e-425d4fce0818" />
+
+**Data Sources:**
+
+**Google Trends and Local Search Volume Data,** what are people are actively searching for in the area?
+
+**Online Reviews,** analyze reviews from platforms ex Google and Yelp.
+
+**Foot Traffic Data,** open mobility datasets or anonymized location APIs.
+
+**Social Media,** hashtags and engagement patterns.
+
+**Contextual Data,** local event calendars and weather APIs.
+
+
+**AI Techniques:**
+
+**Natural Language Processing,** to analyze the content of online reviews.
+
+**Time Series Forecasting,** predict future demand by analyzing historical data.
+	
+**Clustering,** group similar businesses or customer behaviors.
+
+**Anomaly Detection,** identifying sudden, unexpected changes in data.
+
+**Deep Learning,** advanced forecasting.
+
+**Explainable AI,** not only make predictions but also explain why.
 
 # Challenges
-<img width="989" height="199" alt="image" src="https://github.com/user-attachments/assets/6de4c329-fe17-4aa3-ad18-abe73fc4cfaa" />
+
+**Non-digital factors,** this AI model relies on data that leaves a digital footprint, but many events that impact local businesses are invisible online. 
+
+**Data quality and availability,** smaller towns might not have enough public data to generate reliable or meaningful insights, making the tool less effective in those locations.
+
+**No real-time causality,** the tool is excellent at predicting correlations, for example, it can predict that an increase in searches for "vegan food" will lead to higher demand for plant-based dishes. However, it can’t tell you the exact reason why that trend started.
+
+**Ethical limitations,** we have to handle location and review data with the utmost care, even when anonymized, to protect user privacy and ensure transparency.
 
 # What´s next?
-<img width="974" height="155" alt="image" src="https://github.com/user-attachments/assets/c98f5f9d-0708-4e00-9655-61329c7a7591" />
+**In the future, LocalPulse could:**
+
+**Mobile app,** give business owners on-the-go access to their insights, with customized alerts that notify them instantly when significant trend shifts are detected.
+
+**Competitive analysis,** provide even deeper value. This allows businesses to anonymously compare their performance against similar local businesses. 
+
+**Integrate LocalPulse with existing inventory systems** to automatically suggest operational changes, like ordering more of a trending product.
+
 
 # How I will create my model - step by step 
-<img width="942" height="177" alt="image" src="https://github.com/user-attachments/assets/4bdab310-83c4-4e7e-9bb8-3199da7d8bf6" />
+**• Main goal:** Build a predictive model and predict a business's daily revenue based on a variety of other factors.
+
+**1. Data preparation:** Ask LLM to create fake dataset that the model will learn from.
+	
+**2. Preprocessing:** Translates the categorical variables (Local_Event, Weather, Business_Type) into numeric values. Identifies which columns are "features" (inputs, e.g., foot traffic) and which column is "targets" (outputs, e.g., revenue).
+
+**3. Model training:** Divided data into a training and a test part, 80% vs. 20%. Use LinearRegression, to look for a linear relationship between the features and revenue.
+
+**4. Prediction:** When model is trained, make a prediction on the test data. The code prints out the "model coefficients," which shows how each factor affects revenue.
+
 
 
 # My model code
