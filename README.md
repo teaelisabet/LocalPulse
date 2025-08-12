@@ -26,5 +26,5 @@ LocalPulse fills this gap by offering a simple, AI-powered forecasting tool tail
 <img width="974" height="155" alt="image" src="https://github.com/user-attachments/assets/c98f5f9d-0708-4e00-9655-61329c7a7591" />
 
 # How I will create my model - step by step 
-<img width="942" height="177" alt="image" src="https://github.com/user-attachments/assets/4da6b37b-3817-4ba7-8a7f-e5173a3c2540" />
-See the result in the file "LocalPulse.Code.
+<img width="942" height="199" alt="image" src="https://github.com/user-attachments/assets/1f3b55e9-9410-40c7-ba1c-372cfa8e5107" />
+
