@@ -1,7 +1,7 @@
 # **LocalPulse - AI-Powered Local Market Insights**
 
 # My idea 
-LocalPulse is an AI-based trend forecasting tool designed focus on small local businesses. It analyzes digital signals, such as search trends, online reviews, and foot traffic data, to help business owners anticipate demand shifts and make smarter, data-informed decisions about products and services in their local area.
+LocalPulse is an AI-based trend forecasting tool designed focus on small local businesses. It analyzes digital signals, such as search trends, online reviews, and foot traffic data, to help business owners anticipate demand shifts and make smarter, data-informed decisions about products and services in their local area. To see the model code please open the file "LocalPulse Code" above. 
 
 # Background
 **The problem:** Many small businesses struggle with understanding their local markets due to limited time, limited access to real-time data or expensive market research.
